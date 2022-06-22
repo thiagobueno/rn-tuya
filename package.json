@@ -1,0 +1,54 @@
+{
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "keywords": [
+    "react-native",
+    "react native tuya",
+    "tuyasmart",
+    "tuya sdk",
+    "iot",
+    "tuya"
+  ],
+  "files": [
+    "android",
+    "ios",
+    "dist",
+    "RNTuyaSdk.podspec"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.61.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "rn-tuya",
+  "description": "React Native bindings for the Tuya SDK",
+  "homepage": "https://github.com/thiagobueno/rn-tuya#readme",
+  "author": "Thiago Bueno",
+  "module": "dist/rn-tuya.esm.js",
+  "devDependencies": {
+    "@types/jest": "^28.1.3",
+    "@types/react-native": "^0.61.16",
+    "@volst/eslint-config": "^4.1.1",
+    "react-native": "^0.61.5",
+    "husky": "^8.0.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}
