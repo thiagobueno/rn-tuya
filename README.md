@@ -15,7 +15,7 @@ Tuya Cloud HTTP API interface package
 ## Getting started
 
 ```
-yarn add thiagobueno/rn-tuya
+yarn add rn-tuya
 ```
 
 This library contains native code which is automatically linked in React Native >= 0.59. For iOS, run `cd ios && pod install`.
@@ -104,7 +104,7 @@ Now you can actually use the methods in this package. Unfortunately I don't have
 To login with an existing account:
 
 ```js
-import { loginWithEmail } from 'thiagobueno/rn-tuya';
+import { loginWithEmail } from 'rn-tuya';
 
 await loginWithEmail({
   countryCode: '+1',
@@ -116,7 +116,7 @@ await loginWithEmail({
 To register a new account you first need to validate the email address. And then actually register using the code in the email.
 
 ```js
-import { getRegisterEmailValidateCode, registerAccountWithEmail } from 'thiagobueno/rn-tuya';
+import { getRegisterEmailValidateCode, registerAccountWithEmail } from 'rn-tuya';
 
 await getRegisterEmailValidateCode({
   countryCode: '+1',
@@ -136,7 +136,7 @@ await registerAccountWithEmail({
 To get the currently logged in user:
 
 ```js
-import { getCurrentUser } from 'thiagobueno/rn-tuya';
+import { getCurrentUser } from 'rn-tuya';
 
 const user = await getCurrentUser();
 ```
