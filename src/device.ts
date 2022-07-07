@@ -75,11 +75,14 @@ export function publishDps(params: object) {
   return tuya.publishDps(params);
 }
 
-export type RemoveDeviceParams = { devId: string };
+export type DeviceParams = { devId: string };
 
-export function removeDevice(params: RemoveDeviceParams): Promise<string> {
-  return tuya.removeDevice(params);
+export function removeDevice(params: DeviceParams): Promise<string> {
+    return tuya.removeDevice(params);
 }
+
+export declare function getDevice(params: DeviceParams): Promise<string>;
+export declare function getDeviceData(params: DeviceParams): Promise<string>;
 
 export type RenameDeviceParams = { devId: string; name: string };
 

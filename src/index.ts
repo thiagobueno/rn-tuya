@@ -10,3 +10,4 @@ export * from './timer';
 export * from './user';
 export * from './share';
 export * from './core';
+export * from './room';
